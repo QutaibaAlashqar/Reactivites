@@ -5,10 +5,12 @@ using Persistence;
 
 namespace API.Controllers
 {
-    public class ActivitiesControkker : BaseApiController
+    [Route("api/[controller]")]
+
+    public class ActivitiesController : BaseApiController
     {
         private readonly DataContext context;
-        public ActivitiesControkker(DataContext context)
+        public ActivitiesController(DataContext context)
         {
             this.context = context;
 

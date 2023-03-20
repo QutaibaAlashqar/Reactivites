@@ -1,4 +1,4 @@
-
+//  firstttt
 using Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -42,6 +42,5 @@ catch (Exception ex){
     var logger = services.GetRequiredService<Logger<Program>>();
     logger.LogError(ex, "An error Occured during migrastion"); 
 }
-
 
 app.Run();
